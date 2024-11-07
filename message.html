@@ -1,0 +1,357 @@
+<html>
+
+<head>
+    <title>Happy Birthday</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .videopart {
+
+            /* margin-left: 5%; */
+            display: flex;
+            justify-content: center;
+            width: 90%;
+
+            margin-top: 200px;
+            margin: auto;
+            /* position: absolute; */
+        }
+
+        .video1 {
+            box-shadow: 2px 2px 200px 5px rgb(96, 77, 0);
+            border-radius: 20px;
+            overflow: hidden;
+            margin-top: 200px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        /* Container styling */
+        /* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f5a623, #fbc08d);
+    font-family: Arial, sans-serif;
+} */
+
+        .name-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            animation: float 3s infinite ease-in-out alternate;
+            /* Floating effect */
+        }
+
+        /* Individual letter styling */
+        .letter {
+            font-size: 12vw;
+            /* Large text */
+            font-weight: bold;
+            background: linear-gradient(45deg, #5a57ff, #ff00ff, #ff0000, #ff6347);
+            -webkit-background-clip: text;
+            color: transparent;
+            position: relative;
+            transition: transform 0.3s ease, filter 0.3s ease;
+            cursor: pointer;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+            /* Sparkle glow */
+        }
+
+        /* Hover effect for each letter */
+        .letter:hover {
+            transform: scale(1.2) rotate(5deg);
+            /* Slight rotation */
+            filter: drop-shadow(0 0 10px #ffd700) drop-shadow(0 0 20px #ff6347);
+            /* Enhanced sparkle */
+        }
+
+        .FALTU {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Tooltip styling */
+
+
+        /* Tooltip styling */
+        .letter::after {
+            content: attr(data-tooltip);
+            /* Display the tooltip text */
+            position: absolute;
+            top: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+            font-size: 2vw;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            border-radius: 8px;
+            opacity: 0;
+            transition: opacity 0.3s ease, top 0.3s ease;
+            white-space: pre-wrap;
+            /* Allows line breaks */
+            pointer-events: none;
+            box-shadow: 0 0 8px rgba(253, 133, 255, 0.6);
+        }
+
+        /* Show tooltip on hover */
+        .letter:hover::after {
+            opacity: 1;
+            top: -100px;
+            /* Move tooltip upwards on hover */
+        }
+
+        /* Show tooltip on hover */
+        .letter:hover::after {
+            opacity: 1;
+            top: -100px;
+        }
+
+        .strikethrough {
+            text-decoration: line-through;
+            /* Creates a line through the text */
+            color: #ffffff;
+            /* You can adjust the color to fit your design */
+        }
+
+        .black {
+            height: 100%;
+            width: 100%;
+            background-color: red;
+        }
+
+        /* Floating animation */
+        @keyframes float {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-10px);
+            }
+        }
+
+        .part4 {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+            color: rgb(255, 0, 242);
+            text-shadow: 2px 2px 20px #5a57ff;
+        }
+
+        .video1:hover {
+            transform: scale(1.05);
+            /* Slightly enlarge the video on hover */
+            box-shadow: 2px 2px 200px 10px rgba(255, 165, 0, 0.7);
+            /* Enhance shadow color and size */
+            cursor: pointer;
+            /* Change cursor to indicate interactivity */
+        }
+
+        @media (min-width:480px) {
+            .scroll-down {
+                font-size: 2rem;
+            }
+        }
+
+        @media(max-width:439px) {
+            .scroll-down {
+                font-size: 1rem;
+            }
+        }
+
+        .scroll-down {
+            /* Adjust font size as needed */
+            font-weight: bold;
+            /* Make it bold */
+            color: transparent;
+            /* Hide the text color */
+            background: linear-gradient(90deg, #ff007a, #ffb347);
+            /* Gradient effect */
+            background-clip: text;
+            /* Clip the background to the text */
+            -webkit-background-clip: text;
+            /* For Safari */
+            animation: bounce 2s infinite;
+            /* Bounce animation */
+            text-align: center;
+            /* Center the text */
+            margin-top: 50px;
+            /* Space above the text */
+            position: relative;
+            /* Position for pseudo-element */
+        }
+
+        .scroll-down::after {
+            content: '';
+            /* Empty content for underline */
+            display: block;
+            width: 60%;
+            /* Width of the underline */
+            height: 5px;
+            /* Height of the underline */
+            background: #ff007a;
+            /* Color of the underline */
+            margin: 10px auto;
+            /* Center the underline */
+            animation: wave 2s infinite;
+            /* Wave animation */
+        }
+
+        /* Bounce animation */
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-20px);
+            }
+
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Wave animation for the underline */
+        @keyframes wave {
+
+            0%,
+            100% {
+                transform: scaleX(1);
+            }
+
+            50% {
+                transform: scaleX(1.2);
+                /* Scale effect */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="loader">
+                <button id="play">
+                    <p class="theta">
+                        Let's Begin <br>
+                        <span class="an">Tap to Start</span>
+                    </p>
+
+                </button>
+            </div>
+        </div>
+    </div>
+    <audio class="song" controls loop>
+        <source src="music.mp3">
+        </source>
+        Your browser isn't invited for super fun audio time.
+    </audio>
+    <canvas id="confetti"></canvas>
+    <div class="main">
+        <div class="container pt-5">
+            <div class="row">
+
+                <div class="col-12 col-xl-6 mx-auto">
+                    <img src="img/banner.png" alt="">
+                </div>
+
+                <div class="col-12  text-center">
+                    <div id="name" class="area">Suhani</div>
+                </div>
+
+                <div class="col-12 text-center">
+                    <div class="type-wrap">
+                        <div id="typed-strings" class="typing">
+                            <h2>
+                                Hii 19 saal ki Suhani!
+                            </h2>
+
+                            <h5>
+                                May your day be filled with 🎉😊
+                            </h5>
+                            <h5>
+                                laughter,love,and
+                            </h5>
+                            <h5>
+                                all the joy you bring to others!
+                            </h5>
+                        </div>
+                        <span id="typed" style="white-space:pre;"></span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-xl-3 cake" >
+                    <img src="img/cake.gif" alt="">
+                </div>
+
+            </div>
+        </div>
+        <img src="img/Balloon-Border.png" width="100%" class="balloon-border">
+
+    </div>
+    <div CLASS="FALTU">
+        <p class="scroll-down">SCROLL DOWN BRO</p>
+
+    </div>
+    <div class="videopart">
+        <video src="Suhani video final.mp4" class="video1" muted></video> 
+
+    </div>
+    <div class="part4">
+        <p>
+            Hover on Letters
+        </p>
+    </div>
+    <div class="name-container">
+
+        <span class="letter" data-tooltip="Sweet (Maska lagane me Expert)">S</span>
+        <span class="letter" data-tooltip="Understanding++">U</span>
+        <span class="letter" data-tooltip="Hasya padarth">H</span>
+        <span class="letter" data-tooltip="dadi ki AAGYAKARI ">A</span>
+        <span class="letter nalayak" data-tooltip="(N)letter ke layak toh kuch bhi nhi h">N</span>
+        <span class="letter"
+            data-tooltip="Ichadhari Insaan adapt Changes for others&#10;only Depression and Happiness me">I</span>
+
+    </div>
+    <div class="black">
+
+    </div>
+</body>
+<script>
+    // Confetti Effect Function
+    function createConfetti() {
+        const confettiContainer = document.createElement('div');
+        confettiContainer.classList.add('confetti-container');
+        document.body.appendChild(confettiContainer);
+
+        for (let i = 0; i < 100; i++) {
+            const confetti = document.createElement('div');
+            confetti.classList.add('confetti');
+            confetti.style.left = `${Math.random() * 100}vw`;
+            confetti.style.animationDuration = `${3 + Math.random() * 3}s`;
+            confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 70%)`;
+            confettiContainer.appendChild(confetti);
+        }
+    }
+
+    // Start confetti on page load
+    window.onload = createConfetti();
+
+</script>
+<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>
