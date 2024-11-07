@@ -16,10 +16,18 @@
 
             margin-top: 200px;
             margin: auto;
+
             /* position: absolute; */
         }
 
         .video1 {
+            box-shadow: 2px 2px 200px 5px rgb(96, 77, 0);
+            border-radius: 20px;
+            overflow: hidden;
+            margin-top: 200px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .video2{
             box-shadow: 2px 2px 200px 5px rgb(96, 77, 0);
             border-radius: 20px;
             overflow: hidden;
@@ -235,6 +243,16 @@
                 /* Scale effect */
             }
         }
+        @media (max-width:800px) {
+            .video1{
+                display: none;
+            }
+        }
+        @media (min-width:801px) {
+            .video2{
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -306,7 +324,7 @@
     </div>
     <div class="videopart">
         <video src="Suhani video final.mp4" class="video1" muted></video> 
-
+        <video src="suhanipart2.mp4" class = "video2" muted></video>
     </div>
     <div class="part4">
         <p>
