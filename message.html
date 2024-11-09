@@ -7,6 +7,90 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
+      
+
+      
+
+        .wrapper {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #fff;
+            background-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align:center;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+        .wrapper:hover {
+    box-shadow: 0 0 20px 10px rgba(210, 254, 251, 0.6); /* Pink glow */
+    transform: scale(1.02); /* Slight zoom effect */
+}
+        h1, h2 {
+            margin: 0;
+            line-height: 1.25;
+        }
+
+        .aboutthedata {
+            padding-bottom: 20px;
+            border-bottom: 4px dotted;
+            font-size:2.4rem;
+            text-transform: uppercase;
+            text-shadow: 0.5px 0.1px #fffcf5, 1px 2px;
+            
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-size: 1.5rem;
+        }
+
+        canvas {
+            position: fixed;
+            z-index: -3;    
+            top: 0;
+            left: 0;
+        }
+
+        @media screen and (min-width: 450px) {
+            h1 {
+                font-size: 4rem;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+        }
+  .both{
+    display: flex;
+    justify-content: center;
+
+  }
+  .main_content{
+    color: rgb(153, 0, 170);
+
+  }
+.data{
+    color: rgb(153, 0, 170);
+}
+.thank{
+    color: rgb(153, 0, 170);
+}
+.final{
+    color: rgb(153, 0, 170);
+
+}
+.once{
+    color: rgb(153, 0, 170);
+}
+  .both>div{
+            font-size: x-large;
+            font-weight: bold;
+            background: linear-gradient(204deg, rgb(31, 207, 195) 0.00%, rgb(31, 145, 207) 100.00%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+  }
+
         .videopart {
 
             /* margin-left: 5%; */
@@ -19,7 +103,9 @@
 
             /* position: absolute; */
         }
-
+        .my_image{
+            z-index: 10;
+        }
         .video1 {
             box-shadow: 2px 2px 200px 5px rgb(96, 77, 0);
             border-radius: 20px;
@@ -254,21 +340,28 @@
             }
         }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
+    <!-- matter-wrap plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/plugins/matter-wrap.min.js"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="row">
             <div class="loader">
+                
                 <button id="play">
                     <p class="theta">
                         Let's Begin <br>
-                        <span class="an">Tap to Start</span>
+                        <span class="an">Tap to Enjoy</span>
                     </p>
 
                 </button>
+                
             </div>
+            
         </div>
+    
     </div>
     <audio class="song" controls loop>
         <source src="music.mp3">
@@ -342,11 +435,243 @@
             data-tooltip="Ichadhari Insaan adapt Changes for others&#10;only Depression and Happiness me">I</span>
 
     </div>
-    <div class="black">
+    <div class="wrapper">
+        <p class="aboutthedata">Kuch baate esi bhi,</p>
+        <!-- Content here -->
+    <p class = "main_content">
+        Bhai mene apni life me kabhi socha bhi nhi tha ki suhani naam ki ladki kya kr rhi hogi like 4th to 10th fir achanak se bekar kismat ho gyi or tu introduce hui The One and only Legendary Suhani is Back . Again as Legendary logo se muje bda drr lgta h (kya matlab muje apne aap se drr lgta h),Finally we are here,pta nhi, pr muje yeh likhte hue bhut acha lg rha h,<br>
+        <p class = "thank">Thank you for,</p> 
+       <ul>
+        <li class = "data">
+            Hr baat me apna gyaan dholne ke liye,<br>pr tere paas koi option nhi dena toh padega.
+        </li>
+        <br>
 
+        <li class = "data">
+            For always listening me with such a passions.
+        </li>
+       <br>
+
+        <li class = "data">
+          For making such a bond in this short time.
+        </li>
+       </ul>
+    <p class = "final">
+        matlab me kaafi comfortable toh ho hi gya hu obviously,or esa hone ke liye dosti Care,Roasting,Bakwaas se bhari honi chahiye or yeh toh rg rg me zinda h tere.Vese yeh sb likha h voh sb common sense ki baate h pr iske alava dimaag me kuch aa nhi rha h mere,
+         
+    </p>
+      
+       <p class = "once">
+        Once again
+       </p>
+      <div class="both">
+        <div id="staticText">Happy Birthday&nbsp;</div>
+    <div id="typingEffect"></div>
+    
+    
+      </div>
+   
+
+    </p>
+       <p class="final">
+        ek or nya year or bhi opportunities is saal andha chaapna , dadi ki umeedo pe kayam bnke dikhana 😎, or bss tu u hi mst rhe matlab apni sadbudhi se hr chiz se fight kr ske (gyaan me ese de rha hu jese me toh kr chuka hu 🤣).
+        <br>
+
+        <p class = "final" style="margin-bottom: 0px;">
+            Please Note - I am waiting for Financial Independence Day.
+        </p>
+        <p style="font-size: small;margin-top: 0px;color: red;">Jox</p>
+        <p class="final">
+            bss yaar, tu sahi me star toh h dimaag ke chahe kitne bhi lge ho mood at the end mst ho hi jaata h uske liye chahe fir tuje reel bhejni pade yaa bacho ki aavaj nikalni pade yaa UP vaala accent yeh sb me kabhi bhool nhi paunga or time aane pr chidaunga🤣.
+        </p>
+        <p class ="final" style="font-size: xx-large;">
+            All the Best for Your Future . May you become a Real Star for Everyone One Day,<span style="color: #00aab9;"> Like me</span>. 
+        </p>
+        
+       </p> 
     </div>
+    <canvas id="bg"></canvas>
+    
 </body>
 <script>
+    Matter.use('matter-wrap');
+
+let floatyBubbles = {
+    options: {
+        canvasSelector: '#bg',
+        radiusRange: [50, 100],
+        xVarianceRange: [-0.5, 0.5],
+        yVarianceRange: [0.5, 1.5],
+        airFriction: 0.03,
+        opacity: 1,
+        collisions: true,
+        scrollVelocity: 0.025,
+        pixelsPerBody: 50000,
+        colors: ['#e4e4cc', '#e1d2c4', '#d1e4df']
+    },
+
+    scrollDelay: 100,
+    resizeDelay: 400,
+    lastOffset: undefined,
+    scrollTimeout: undefined,
+    resizeTimeout: undefined,
+    engine: undefined,
+    render: undefined,
+    runner: undefined,
+    bodies: undefined,
+
+    init(options) {
+        this.options = Object.assign({}, this.options, options);
+
+        let viewportWidth = document.documentElement.clientWidth;
+        let viewportHeight = document.documentElement.clientHeight;
+
+        this.lastOffset = window.pageYOffset;
+        this.scrollTimeout = null;
+        this.resizeTimeout = null;
+
+        this.engine = Matter.Engine.create();
+        this.engine.world.gravity.y = 0;
+
+        this.render = Matter.Render.create({
+            canvas: document.querySelector(this.options.canvasSelector),
+            engine: this.engine,
+            options: {
+                width: viewportWidth,
+                height: viewportHeight,
+                wireframes: false,
+                background: 'transparent'
+            }
+        });
+        Matter.Render.run(this.render);
+
+        this.runner = Matter.Runner.create();
+        Matter.Runner.run(this.runner, this.engine);
+
+        this.bodies = [];
+        let totalBodies = Math.round(viewportWidth * viewportHeight / this.options.pixelsPerBody);
+        for (let i = 0; i <= totalBodies; i++) {
+            let body = this.createBody(viewportWidth, viewportHeight);
+            this.bodies.push(body);
+        }
+        Matter.World.add(this.engine.world, this.bodies);
+
+        window.addEventListener('scroll', this.onScrollThrottled.bind(this));
+        window.addEventListener('resize', this.onResizeThrottled.bind(this));
+    },
+  
+    shutdown() {
+        Matter.Engine.clear(this.engine);
+        Matter.Render.stop(this.render);
+        Matter.Runner.stop(this.runner);
+
+        window.removeEventListener('scroll', this.onScrollThrottled);
+        window.removeEventListener('resize', this.onResizeThrottled);
+    },
+  
+    randomize(range) {
+        let [min, max] = range;
+        return Math.random() * (max - min) + min;
+    },
+  
+    createBody(viewportWidth, viewportHeight, x = null, y = null) {
+        x = x !== null ? x : this.randomize([0, viewportWidth]);
+        y = y !== null ? y : this.randomize([0, viewportHeight]);
+        let radius = this.randomize(this.options.radiusRange);
+        let color = this.options.colors[this.bodies.length % this.options.colors.length];
+      
+        return Matter.Bodies.circle(x, y, radius, {
+            render: {
+                fillStyle: color,
+                opacity: this.options.opacity
+            },
+            frictionAir: this.options.airFriction,
+            collisionFilter: {
+                group: this.options.collisions ? 1 : -1
+            },
+            plugin: {
+                wrap: {
+                    min: { x: 0, y: 0 },
+                    max: { x: viewportWidth, y: viewportHeight }
+                }
+            }
+        });
+    },
+  
+    onScrollThrottled() {
+        if (!this.scrollTimeout) {
+            this.scrollTimeout = setTimeout(this.onScroll.bind(this), this.scrollDelay);
+        }
+    },
+  
+    onScroll() {
+        this.scrollTimeout = null;
+
+        let delta = (this.lastOffset - window.pageYOffset) * this.options.scrollVelocity;
+        this.bodies.forEach((body) => {
+            Matter.Body.setVelocity(body, {
+                x: body.velocity.x + delta * this.randomize(this.options.xVarianceRange),
+                y: body.velocity.y + delta * this.randomize(this.options.yVarianceRange)
+            });
+        });
+      
+        let viewportWidth = document.documentElement.clientWidth;
+        let viewportHeight = document.documentElement.clientHeight;
+        let scrollHeight = document.documentElement.scrollHeight;
+        let totalBodies = Math.round((viewportWidth * scrollHeight) / this.options.pixelsPerBody);
+        if (this.bodies.length < totalBodies) {
+            let body = this.createBody(viewportWidth, scrollHeight);
+            this.bodies.push(body);
+            Matter.World.add(this.engine.world, body);
+        }
+
+        this.lastOffset = window.pageYOffset;
+    },
+  
+    onResizeThrottled() {
+        if (!this.resizeTimeout) {
+            this.resizeTimeout = setTimeout(this.onResize.bind(this), this.resizeDelay);
+        }
+    },
+  
+    onResize() {
+        this.shutdown();
+        this.init();
+    }
+};
+
+window.addEventListener('DOMContentLoaded', () => {
+    Object.create(floatyBubbles).init({
+        canvasSelector: '#bg'
+    });
+});
+const words = ["Suhani", "Moti", "Choti", "Star"];
+let wordIndex = 0;
+let letterIndex = 0;
+const typingElement = document.getElementById("typingEffect");
+
+function type() {
+    if (letterIndex < words[wordIndex].length) {
+        typingElement.textContent += words[wordIndex].charAt(letterIndex);
+        letterIndex++;
+        setTimeout(type, 150);
+    } else {
+        setTimeout(erase, 800); // Pause before erasing
+    }
+}
+
+function erase() {
+    if (letterIndex > 0) {
+        typingElement.textContent = words[wordIndex].substring(0, letterIndex - 1);
+        letterIndex--;
+        setTimeout(erase, 100);
+    } else {
+        wordIndex = (wordIndex + 1) % words.length; // Move to the next word
+        setTimeout(type, 200); // Start typing the next word
+    }
+}
+
+document.addEventListener("DOMContentLoaded", type)
     // Confetti Effect Function
     function createConfetti() {
         const confettiContainer = document.createElement('div');
